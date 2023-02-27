@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap')
+@import reset
+$transparente: rgba(255,255,255,0.2)
+$pad-br: 20px
+$gris-claro: #787867
+$link:#00E6CC
+$success: #F9F871
+body
+    background: white
+    font-size: 18px
+    height: 100vh
+a
+    color: $link
+    font-weight: bold
+    text-shadow: 1px 1px 1px black
+header
+    font-family: 'Alegreya Sans SC', sans-serif
+    background: url('../images/libros.jpg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: center 
+    nav
+        display: grid
+        grid-template-columns: 180px 1fr
+        background: #242423
+        padding: 5px $pad-br
+        border-bottom: 1px solid $gris-claro
+        ul
+            display: inline-flex
+            justify-content: flex-end
+            align-items: center
+            li
+                margin-right: 10%
+    section
+        display: grid
+        grid-template-columns: 2fr 1fr
+        padding: 50px $pad-br
+        column-gap: 100px
+        background: $transparente
+        blockquote
+            color: white
+            background: $transparente
+            text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px -1px 5px black
+            font-size: 1.2em
+        form
+            padding: $pad-br
+            background: $transparente
+            input, button
+                display: block
+                margin-bottom: $pad-br
+            input
+                padding: 10px
+                width: calc(100% - 25px) 
+            button
+                width: 100%
+                font-size: 1em
+                background: $success
+                padding: 10px
+                border: none
+                cursor: pointer
+            a
+                display: block
+                text-align: center
+main
+    padding: 60px 80px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    row-gap: 60px
+    column-gap: 40px
+footer
+
+
+
+@media screen and (max-width: 575.98px)
+
+    header
+        background-size: 100%
+        background-repeat: no-repeat
+        background-position: center 
+        #logo
+            display: none
+    section
+        grid-template-columns: 1fr
+        blockquote
+            display: none
+    main
+        grid-template-columns: 1fr
+        padding: 30px 10px
+        section
+            border-bottom: 1px solid $gris-claro
+
+@media screen and (mix-width: 576px)
+    header
+        #minilogo
+            display: none    
+
+@media screen and (max-width: 991.98px)
+
+    header
+        background-size: 100%
+        background-repeat: no-repeat
+        background-position: center 
+        #logo
+            display: none
+    section
+        grid-template-columns: 1fr
+        blockquote
+            display: none
+    main
+        grid-template-columns: 1fr
+        padding: 30px 10px
+        section
+            border-bottom: 1px solid $gris-claro
+
+@media screen and (mix-width: 768px)
+    header
+        #minilogo
+            display: none    
+

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: white;
+  font-size: 18px;
+  height: 100vh;
+}
+
+a {
+  color: #00E6CC;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+
+header {
+  font-family: "Alegreya Sans SC", sans-serif;
+  background: url("../images/libros.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  background: #242423;
+  padding: 5px 20px;
+  border-bottom: 1px solid #787867;
+}
+header nav ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav ul li {
+  margin-right: 10%;
+}
+header section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 50px 20px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  background: rgba(255, 255, 255, 0.2);
+}
+header section blockquote {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px -1px 5px black;
+  font-size: 1.2em;
+}
+header section form {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+}
+header section form input, header section form button {
+  display: block;
+  margin-bottom: 20px;
+}
+header section form input {
+  padding: 10px;
+  width: calc(100% - 25px);
+}
+header section form button {
+  width: 100%;
+  font-size: 1em;
+  background: #F9F871;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+header section form a {
+  display: block;
+  text-align: center;
+}
+
+main {
+  padding: 60px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 60px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+@media screen and (max-width: 575.98px) {
+  header {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header #logo {
+    display: none;
+  }
+  section {
+    grid-template-columns: 1fr;
+  }
+  section blockquote {
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+    padding: 30px 10px;
+  }
+  main section {
+    border-bottom: 1px solid #787867;
+  }
+}
+@media screen and (mix-width: 576px) {
+  header #minilogo {
+    display: none;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  header {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header #logo {
+    display: none;
+  }
+  section {
+    grid-template-columns: 1fr;
+  }
+  section blockquote {
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+    padding: 30px 10px;
+  }
+  main section {
+    border-bottom: 1px solid #787867;
+  }
+}
+@media screen and (mix-width: 768px) {
+  header #minilogo {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
